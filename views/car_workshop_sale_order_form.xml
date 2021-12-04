@@ -1,0 +1,25 @@
+<odoo>
+  <data>
+    <record id="view_order_form_inherit_sale_order" model="ir.ui.view">
+      <field name="name">sale.order.view.form.inherit</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form"/>
+      <field name="arch" type="xml">
+
+        <xpath expr="//page[@name='other_information']" position="attributes">
+          <attribute name="groups">base.group_system</attribute>
+        </xpath>
+
+        <xpath expr="//page[@name='customer_signature']" position="attributes">
+          <attribute name="groups">base.group_system</attribute>
+        </xpath>
+
+        <field name='partner_id' position='after'>
+          <field name="car_id" />
+        </field>
+      </field>
+
+    </record>
+
+  </data>
+</odoo>
