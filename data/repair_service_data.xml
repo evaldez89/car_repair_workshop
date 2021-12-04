@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- TODO: change to 1  -->
+    <data noupdate="0">
+
+        <record id="product_category_repair_service" model="product.category">
+            <field name="parent_id" ref="product.product_category_all"/>
+            <field name="name">Servicio de Reparación</field>
+        </record>
+
+        <record id="product_product_repair_service_001" model="product.product">
+            <field name="name">Cambio de bujías</field>
+            <field name="default_code">Repair_001</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+        <record id="product_product_repair_service_002" model="product.product">
+            <field name="name">Cambio de aceite y filtro</field>
+            <field name="default_code">Repair_002</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+        <record id="product_product_repair_service_003" model="product.product">
+            <field name="name">Cambio del filtro de gasolina y aire</field>
+            <field name="default_code">Repair_003</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+        <record id="product_product_repair_service_004" model="product.product">
+            <field name="name">Cambio del refrigerante</field>
+            <field name="default_code">Repair_004</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+        <record id="product_product_repair_service_005" model="product.product">
+            <field name="name">Cambio de la faja del alternador</field>
+            <field name="default_code">Repair_005</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+        <record id="product_product_repair_service_006" model="product.product">
+            <field name="name">Ajuste del tiempo de encendido</field>
+            <field name="default_code">Repair_006</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+        <record id="product_product_repair_service_007" model="product.product">
+            <field name="name">Revisión de las luces y los faros</field>
+            <field name="default_code">Repair_007</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+        <record id="product_product_repair_service_008" model="product.product">
+            <field name="name">Ajuste del clutch</field>
+            <field name="default_code">Repair_008</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+        <record id="product_product_repair_service_009" model="product.product">
+            <field name="name">Revisión de los niveles de: la caja, la batería e hidráulico</field>
+            <field name="default_code">Repair_009</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+        <record id="product_product_repair_service_010" model="product.product">
+            <field name="name">Limpieza de terminales de batería</field>
+            <field name="default_code">Repair_010</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+        <record id="product_product_repair_service_011" model="product.product">
+            <field name="name">Revisión de los frenos y el tren delantero</field>
+            <field name="default_code">Repair_011</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="car_workshop.product_category_repair_service"/>
+            <field name="sale_ok" eval="True"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="list_price">1.0</field>
+        </record>
+
+    </data>
+</odoo>
