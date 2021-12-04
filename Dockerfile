@@ -1,5 +1,5 @@
 FROM  gcr.io/iterativo/dockerdoo:13.0
-ENV ODOO_EXTRA_ADDONS /mnt/extra-addons
+ENV ODOO_EXTRA_ADDONS /mnt/extra-addon
 USER root
 RUN sudo mkdir -p ${ODOO_EXTRA_ADDONS}
 COPY . ${ODOO_EXTRA_ADDONS}/car_workshop
