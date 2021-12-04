@@ -20,10 +20,10 @@ services:
     volumes:
       # Named volumes
       - odoo-data:${ODOO_DATA_DIR}
-      - odoo-modules:${ODOO_EXTRA_ADDONS}
+      - odoo-modules:${ODOO_EXTRA_ADDONS}:cached
     depends_on:
       - db
-
+    command: ["/opt/odoo/odoo-bin", "-u", "car_workshop"]
     networks:
       odoonet:
   # ------------------------
