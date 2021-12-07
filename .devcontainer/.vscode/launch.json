@@ -22,8 +22,7 @@
             "args": [
                 "--config=/etc/odoo/odoo.conf",
                 "--log-level=info",
-                "-d", "",
-                "-u", "",
+                "-u", "car_workshop",
             ],
         },
         {
