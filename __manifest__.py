@@ -25,9 +25,10 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/car_workshop_sale_order_form.xml',
+        'security/ir.model.access.csv',
         'data/repair_service_data.xml',
+        'views/car_workshop_sale_order_tree.xml',
+        'views/car_workshop_sale_order_form.xml',
         'views/views.xml',
     ],
     # only loaded in demonstration mode

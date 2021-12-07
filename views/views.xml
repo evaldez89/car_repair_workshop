@@ -1,60 +1,19 @@
 <odoo>
   <data>
-    <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="card_workshop.list">
-      <field name="name">card_workshop list</field>
-      <field name="model">card_workshop.card_workshop</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
-      </field>
-    </record>
--->
+    <menuitem id="car_workshop_root_menu" name="Workshop" sequence="0"/>
 
-    <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="card_workshop.action_window">
-      <field name="name">card_workshop window</field>
-      <field name="res_model">card_workshop.card_workshop</field>
-      <field name="view_mode">tree,form</field>
+    <record id="sale.action_quotations" model="ir.actions.act_window">
+        <field name="name">Repairs</field>
+        <field name="domain">[('car_id','!=',False)]</field>
+        <field name="view_ids" eval="[
+                (5,0,0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('repair_quotation_tree')})]"/>
     </record>
--->
 
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="card_workshop.action_server">
-      <field name="name">card_workshop server</field>
-      <field name="model_id" ref="model_card_workshop_card_workshop"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
--->
+    <menuitem id="car_workshop_quotation"
+              action="sale.action_quotations"
+              name="Repairs"
+              parent="car_workshop_root_menu" sequence="0"/>
 
-    <!-- Top menu item -->
-<!--
-    <menuitem name="card_workshop" id="card_workshop.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="card_workshop.menu_1" parent="card_workshop.menu_root"/>
-    <menuitem name="Menu 2" id="card_workshop.menu_2" parent="card_workshop.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="card_workshop.menu_1_list" parent="card_workshop.menu_1"
-              action="card_workshop.action_window"/>
-    <menuitem name="Server to list" id="card_workshop" parent="card_workshop.menu_2"
-              action="card_workshop.action_server"/>
--->
   </data>
 </odoo>
