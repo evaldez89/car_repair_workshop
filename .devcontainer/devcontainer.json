@@ -1,0 +1,101 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.205.2/containers/docker-existing-docker-compose
+// If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
+{
+	"name": "Existing Docker Compose (Extend)",
+
+	// Update the 'dockerComposeFile' list if you have more compose files or use different names.
+	// The .devcontainer/docker-compose.yml file contains any overrides you need/want to make.
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+		"dev-vscode.yml"
+	],
+
+	// The 'service' property is the name of the service for the container that VS Code should
+	// use. Update this value and .devcontainer/docker-compose.yml to the real service name.
+	"service": "odoo",
+	"remoteUser": "odoo",
+	"shutdownAction": "stopCompose",
+
+	// The optional 'workspaceFolder' property is the path VS Code should open by default when
+	// connected. This is typically a file mount in .devcontainer/docker-compose.yml
+	"workspaceFolder": "/mnt/extra-addons",
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+
+		"python.autoComplete.addBrackets": true,
+		"python.autoComplete.extraPaths": [
+			"/opt/odoo/addons",
+			"/opt/odoo",
+			"/opt/odoo/odoo/addons",
+			"/mnt/extra-addons"
+		],
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.linting.ignorePatterns": [
+			"/opt/odoo"
+		],
+		"python.formatting.provider": "black",
+		"python.formatting.blackArgs": [
+			"--skip-string-normalization"
+		],
+
+		"editor.fontSize": 14,
+		"editor.formatOnType": true,
+		"files.eol": "\n",
+		"files.exclude": {
+			"**/*.cache": true,
+			"**/*.idea": true,
+			"**/*.pyc": true,
+			"**/*__pycache__": true,
+			"**/.DS_Store": true,
+			"**/.git": true,
+			"**/.hg": true,
+			"**/.svn": true,
+			"**/CVS": true
+		},
+		"files.watcherExclude": {
+			"**/.git/objects/**": true,
+			"**/.git/subtree-cache/**": true,
+			"**/node_modules/*/**": true,
+			"**/.git/*/**": true
+		},
+
+		"workbench.colorTheme": "Monokai Dark Soda",
+		"workbench.iconTheme": "vscode-icons",
+		"workbench.colorCustomizations": {
+			"activityBarBadge.background": "#388E3C",
+			"editorSuggestWidget.highlightForeground": "#388E3C",
+			"list.activeSelectionForeground": "#388E3C",
+			"list.highlightForeground": "#388E3C",
+			"list.inactiveSelectionForeground": "#388E3C",
+			"pickerGroup.foreground": "#388E3C",
+			"progressBar.background": "#388E3C",
+			"scrollbarSlider.activeBackground": "#388E3C50",
+			"tab.activeBorder": "#388E3C",
+			"textLink.foreground": "#388E3C"
+		},
+
+		"xmlTools.enforcePrettySelfClosingTagOnFormat": true,
+		"xmlTools.enableXmlTreeViewCursorSync": true,
+		"git.autofetch": true
+	},
+
+	"extensions": [
+		"aaron-bond.better-comments",
+		"adamcaviness.theme-monokai-dark-soda",
+		"dbaeumer.vscode-eslint",
+		"dotjoshjohnson.xml",
+		"eamodio.gitlens",
+		"magicstack.magicpython",
+		"ms-python.python",
+		"ms-azuretools.vscode-docker",
+		"mstuttgart.odoo-snippets",
+		"vscode-icons-team.vscode-icons",
+		"visualstudioexptteam.vscodeintellicode",
+		"scapigliato.vsc-odoo-development",
+		"scapigliato.odoo-snippets",
+	]
+}
