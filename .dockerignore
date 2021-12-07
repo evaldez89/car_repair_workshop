@@ -1,7 +1,4 @@
-.vscode
 *.code-workspace
-.gitignore
-.git
 __pycache__/
 *.py[cod]
 *$py.class
