@@ -19,9 +19,17 @@
               name="Reports"
               parent="car_workshop_root_menu" sequence="1"/>
 
+    <record id="top_services_pdf_report_action" model="ir.actions.server">
+      <field name="name">Print Top Services</field>
+      <field name="model_id" ref="model_sale_order"/>
+      <field name="type">ir.actions.server</field>
+      <field name="state">code</field>
+      <field name="code">action = model.print_top_services()</field>
+    </record>
+
     <menuitem id="service_report_menu"
-              action="report_action_most_demanded_service"
-              name="Services Report"
+              action="top_services_pdf_report_action"
+              name="Top Services Report"
               parent="car_workshop_reports" sequence="0"/>
 
   </data>
