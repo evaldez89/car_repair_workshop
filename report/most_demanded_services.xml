@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+                id="report_action_most_demanded_service"
+                model="product.category"
+                string="Print Service Report"
+                report_type="qweb-pdf"
+                name="car_workshop.report_most_demanded_service"
+                menu="False"
+        />
+
+        <template id="report_most_demanded_service">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="container">
+                                <div class="jumbotron text-center">
+                                    <h3><span t-field="o.name"/></h3>
+                                </div>
+                                <br/>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+
+</odoo>

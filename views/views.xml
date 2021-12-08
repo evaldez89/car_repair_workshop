@@ -15,5 +15,14 @@
               name="Repairs"
               parent="car_workshop_root_menu" sequence="0"/>
 
+    <menuitem id="car_workshop_reports"
+              name="Reports"
+              parent="car_workshop_root_menu" sequence="1"/>
+
+    <menuitem id="service_report_menu"
+              action="report_action_most_demanded_service"
+              name="Services Report"
+              parent="car_workshop_reports" sequence="0"/>
+
   </data>
 </odoo>
