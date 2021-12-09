@@ -27,8 +27,7 @@
     'data': [
         'security/ir.model.access.csv',
         'data/repair_service_data.xml',
-        'views/car_workshop_sale_order_tree.xml',
-        'views/car_workshop_sale_order_form.xml',
+        'views/car_workshop_sale_order_view.xml',
         'report/most_demanded_services.xml',
         'views/views.xml',
     ],

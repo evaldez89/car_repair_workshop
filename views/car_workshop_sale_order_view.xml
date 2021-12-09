@@ -1,5 +1,17 @@
 <odoo>
   <data>
+
+    <record id="repair_quotation_tree" model="ir.ui.view">
+        <field name="name">repair_quotation.tree</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree" />
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="car_id" />
+            </field>
+        </field>
+    </record>
+
     <record id="view_order_form_inherit_sale_order" model="ir.ui.view">
       <field name="name">sale.order.view.form.inherit</field>
       <field name="model">sale.order</field>
@@ -18,7 +30,6 @@
           <field name="car_id" />
         </field>
       </field>
-
     </record>
 
   </data>
