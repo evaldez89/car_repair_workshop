@@ -1,1 +1,43 @@
-# car_repair_workshop
+## Configuración Inicial
+
+1. Visitar http://localhost:8069 e introducir los datos de configuración necesario
+  ![image](https://user-images.githubusercontent.com/12959163/145413082-7dce7f90-ee7b-4597-b14a-7cee369d135a.png)
+
+1. En el listado de aplicaciones, buscar e instalar "Car Repair Workshop
+  ![image](https://user-images.githubusercontent.com/12959163/145413493-a465c1e9-470a-4b9e-b43d-4eebfbb4d4fa.png)
+
+## Uso / Funciones
+
+### Ir a Menú / Taller
+
+![image](https://user-images.githubusercontent.com/12959163/145416469-ce1035ce-725e-455c-ab98-687f17cb8e43.png)
+![image](https://user-images.githubusercontent.com/12959163/145416606-f169aaf9-3c82-4742-9157-45c6a9d2944a.png)
+
+### Al crear una nueva cotización de reparación
+1. Seleccionar el cliente
+1. Seleccionar el vehículo del cliente
+![image](https://user-images.githubusercontent.com/12959163/145414666-0334fd79-2a9d-41b8-a797-bd7f793032da.png)
+- Si el cliente no tiene vehículos, crear uno
+  ![image](https://user-images.githubusercontent.com/12959163/145415154-5dfabe35-8f14-4575-81d4-df8b99c32f1e.png)
+
+### Al completar los datos de la cotización, confirmar
+- ![image](https://user-images.githubusercontent.com/12959163/145415465-931cf24d-3e5b-4994-92c5-4b1bfe393976.png)
+- ![image](https://user-images.githubusercontent.com/12959163/145416091-eb9dc871-1410-42f1-9d29-22c862fa66cd.png)
+> Una vez creada la factura, la cotización se considera como "Facturada" y se incluye en la reportería
+  
+### Reportes
+
+![image](https://user-images.githubusercontent.com/12959163/145416862-338e6068-f6fe-4323-a2d3-5b63847c61b2.png)
+
+#### Servicio Más Vendido
+
+Archivo PDF con el detalle del servicio que más ha sido vendido:
+
+![image](https://user-images.githubusercontent.com/12959163/145417236-ecc0cd95-0a1c-4834-a7d6-07995a2aa61d.png)
+
+
+#### Servicios de Vehículo
+
+Archivo PDF con listado de los vehículos y los servicios que se le han aplicado:
+
+![image](https://user-images.githubusercontent.com/12959163/145417469-1e5b0dc3-7ffc-44cd-9177-57925eeda036.png)
