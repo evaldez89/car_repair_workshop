@@ -7,7 +7,7 @@ class SaleOrder(models.Model):
     car_id = fields.Many2one(
         "res.partner.car",
         string="Car",
-        rquired=True,
+        required=True,
         domain="[('owner_id','=',partner_id)]",
     )
 
