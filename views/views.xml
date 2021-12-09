@@ -29,7 +29,7 @@
 
     <menuitem id="service_report_menu"
               action="top_services_pdf_report_action"
-              name="Top Services Report"
+              name="Top Service"
               parent="car_workshop_reports" sequence="0"/>
 
   </data>

@@ -11,18 +11,33 @@ class SaleOrder(models.Model):
         domain="[('owner_id','=',partner_id)]",
     )
 
-    def print_top_services(self):
-        self.env['account.move.line']
-        product_ids = self.env['product.product'].search(
-            [
-                (
-                    'categ_id',
-                    '=',
-                    self.env.ref('car_workshop.product_category_repair_service').id,
-                )
-            ]
+    def _get_top_service(self):
+        self.env.cr.execute(
+            """
+            select
+                product.name,
+                product.default_code,
+                sum(line.quantity) total_quantity,
+                sum(line.price_total) total_amount
+            from
+                account_move move
+                join account_move_line line on line.move_id = move.id
+                join product_template product on product.id = line.product_id
+            where
+                move.type = 'out_invoice'
+                and move.invoice_payment_state = 'paid'
+                and line.product_id is not null
+            group by product.name, product.default_code
+            order by total_quantity desc limit 1
+        """
         )
 
+        top_service = self.env.cr.dictfetchall()
+        return top_service[0] if top_service else {}
+
+    def print_top_services(self):
+        data = self._get_top_service()
+
         return self.env.ref('car_workshop.report_car_workshop_products').report_action(
-            [], data={'name': 'Emmanuel Valdez', 'extras': {'age': 32}}
+            [], data=data
         )

@@ -3,22 +3,30 @@
 
     <report
         id="report_car_workshop_products"
-        string="Product Display Names (PDF)"
+        string="Top Service (PDF)"
         model="product.template"
         report_type="qweb-pdf"
         name="car_workshop.report_most_demanded_service"
         file="car_workshop.report_most_demanded_service"
-        print_report_name="'Products - %s' % (object.name)"
+        print_report_name="'Top Service - %s' % (object.name)"
         menu="False"
     />
 
     <template id="report_most_demanded_service">
         <t t-call="web.basic_layout">
             <div class="page">
-                <strong>
-                <t t-esc="name" /> 
-                <t t-esc="extras.get('age')" /> 
-                </strong>
+                <div class="row">
+                    <div class="col-12 text-center" style="border-style: solid; border-color: rgb(227, 227, 227); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-width: 2px 0px;">
+                        <h2>The Most Requested Product Is:<br/>
+                            <strong>
+                                <span t-esc="default_code"/> -
+                                <span t-esc="name"/>
+                            </strong>
+                        </h2>
+                        <h3>Requested: <t t-esc="total_quantity" t-options='{"widget": "float", "precision": 0}' /> times</h3>
+                        <h3>Total Amount: <t t-esc="total_amount" t-options='{"widget": "float", "precision": 2}' /></h3>
+                    </div>
+                </div>
             </div>
         </t>
     </template>
