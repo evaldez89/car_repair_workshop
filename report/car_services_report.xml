@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report
+        id="report_car_services"
+        string="Car Services (PDF)"
+        model="res.partner.car"
+        report_type="qweb-pdf"
+        name="car_workshop.report_car_services"
+        file="car_workshop.report_car_services"
+        print_report_name="'Car Services - %s' % (object.name)"
+        menu="False"
+    />
+
+    <template id="report_car_services">
+        <t t-call="web.html_container">
+            <t t-call="web.internal_layout">
+                <div class="page">
+                    <h3 class="mb32">Car Services Report</h3>
+
+                    <table class="table table-bordered mb32" style="table-layout:auto">
+                        
+                        <t t-foreach="get_data_from_report.keys()" t-as="car">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" colspan="3"><t t-esc="car"/></th>
+                                </tr>
+                                <tr>
+                                    <th>Service Name</th>
+                                    <th>Total Invoiced</th>
+                                    <th>Total Count</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="get_data_from_report[car]" t-as="details">
+                                    <td><t t-esc="details['service']"/></td>
+                                    <td><t t-esc="details['total_price']" t-options='{"widget": "float", "precision": 2}'/></td>
+                                    <td><t t-esc="details['count']" t-options='{"widget": "float", "precision": 0}'/></td>
+                                </tr>
+                            </tbody>
+                        </t>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

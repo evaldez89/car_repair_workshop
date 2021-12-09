@@ -29,6 +29,7 @@
         'data/repair_service_data.xml',
         'views/car_workshop_sale_order_view.xml',
         'report/most_demanded_services.xml',
+        'report/car_services_report.xml',
         'views/views.xml',
     ],
     # only loaded in demonstration mode
