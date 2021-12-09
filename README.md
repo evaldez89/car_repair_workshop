@@ -1,3 +1,21 @@
+# Módulo de Taller de Reparación de Vehículos
+
+## Subir una instancia con `docker-compose`
+
+1. Ubicado en la carpeta del módulo, ejecutar:
+  1. `docker-compose up -d`
+
+## Subir un ambiente de desarrollo `docker-compose` en **Visual Studio Code**
+
+> Debe tener instalado el paquete de extensiones de desarrollo remoto de **Visual Studio Code**:
+> `ms-vscode-remote.vscode-remote-extensionpack`
+
+1. Abrir carpeta con **Visual Studio Code**
+1. Abrir la paleta de comandos:  
+  ![image](https://user-images.githubusercontent.com/12959163/145419269-070e44f4-29d4-49d9-99d3-b870c5e6c8aa.png)
+1. Buscar y ejecutar: `>Remote-Containers: Open Folder in Container`
+1. Seguir las instrucciones y esperar
+
 ## Configuración Inicial
 
 1. Visitar http://localhost:8069 e introducir los datos de configuración necesario
