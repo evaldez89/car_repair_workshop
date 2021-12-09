@@ -17,18 +17,15 @@ class SaleOrder(models.Model):
             select
                 product.name,
                 product.default_code,
-                sum(line.quantity) total_quantity,
+                sum(line.qty_invoiced) total_quantity,
                 sum(line.price_total) total_amount
             from
-                account_move move
-                join account_move_line line on line.move_id = move.id
+                sale_order_line line
                 join product_template product on product.id = line.product_id
             where
-                move.type = 'out_invoice'
-                and move.invoice_payment_state = 'paid'
-                and line.product_id is not null
+                line.invoice_status = 'invoiced'
             group by product.name, product.default_code
-            order by total_quantity desc limit 1
+            order by total_quantity desc limit 1;
         """
         )
 
