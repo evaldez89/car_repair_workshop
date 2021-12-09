@@ -1,0 +1,82 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* car_workshop
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-09 05:56+0000\n"
+"PO-Revision-Date: 2021-12-09 05:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_008
+#: model:product.template,name:car_workshop.product_product_repair_service_008_product_template
+msgid "Ajuste del clutch"
+msgstr "Clutch Adjustment"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_006
+#: model:product.template,name:car_workshop.product_product_repair_service_006_product_template
+msgid "Ajuste del tiempo de encendido"
+msgstr "Turn On Time Adjustment"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_002
+#: model:product.template,name:car_workshop.product_product_repair_service_002_product_template
+msgid "Cambio de aceite y filtro"
+msgstr "Filter and Oil Change"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_001
+#: model:product.template,name:car_workshop.product_product_repair_service_001_product_template
+msgid "Cambio de bujías"
+msgstr "Plug Change"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_005
+#: model:product.template,name:car_workshop.product_product_repair_service_005_product_template
+msgid "Cambio de la faja del alternador"
+msgstr "Alternator Belt Change"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_003
+#: model:product.template,name:car_workshop.product_product_repair_service_003_product_template
+msgid "Cambio del filtro de gasolina y aire"
+msgstr "Air and Gas Filter Change"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_004
+#: model:product.template,name:car_workshop.product_product_repair_service_004_product_template
+msgid "Cambio del refrigerante"
+msgstr "Cooler Liquid Change"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_010
+#: model:product.template,name:car_workshop.product_product_repair_service_010_product_template
+msgid "Limpieza de terminales de batería"
+msgstr "Battery Terminals Cleaning"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_007
+#: model:product.template,name:car_workshop.product_product_repair_service_007_product_template
+msgid "Revisión de las luces y los faros"
+msgstr "Tailligths and Headligths Revision"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_011
+#: model:product.template,name:car_workshop.product_product_repair_service_011_product_template
+msgid "Revisión de los frenos y el tren delantero"
+msgstr "Brakes and Front end Revision"
+
+#. module: car_workshop
+#: model:product.product,name:car_workshop.product_product_repair_service_009
+#: model:product.template,name:car_workshop.product_product_repair_service_009_product_template
+msgid "Revisión de los niveles de: la caja, la batería e hidráulico"
+msgstr "Cage, Battery and Hydraulic Revision"

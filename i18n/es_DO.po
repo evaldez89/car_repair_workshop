@@ -1,0 +1,196 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* car_workshop
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-09 05:44+0000\n"
+"PO-Revision-Date: 2021-12-09 05:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: car_workshop
+#: model:ir.actions.report,print_report_name:car_workshop.report_car_services
+msgid "'Car Services - %s' % (object.name)"
+msgstr "'Servicios de Vehículos - %s' % (object.name)"
+
+#. module: car_workshop
+#: model:ir.actions.report,print_report_name:car_workshop.report_car_workshop_products
+msgid "'Top Service - %s' % (object.name)"
+msgstr "'Servicio Más Vendido - %s' % (object.name)"
+
+#. module: car_workshop
+#: model:ir.model.fields,field_description:car_workshop.field_sale_order__car_id
+#: model:ir.model.fields,field_description:car_workshop.field_sale_order_line__order_partner_car_id
+msgid "Car"
+msgstr "Vehículo"
+
+#. module: car_workshop
+#: model:ir.ui.menu,name:car_workshop.car_services_report_menu
+msgid "Car Services"
+msgstr "Servicios de Vehículo"
+
+#. module: car_workshop
+#: model:ir.actions.report,name:car_workshop.report_car_services
+msgid "Car Services (PDF)"
+msgstr "Servicios de Vehículo (PDF)"
+
+#. module: car_workshop
+#: model:ir.model,name:car_workshop.model_report_car_workshop_report_car_services
+msgid "Car Services Report"
+msgstr "Reporte de Servicios de Vehículo"
+
+#. module: car_workshop
+#: model:ir.model.fields,field_description:car_workshop.field_res_partner__car_ids
+#: model:ir.model.fields,field_description:car_workshop.field_res_users__car_ids
+msgid "Cars"
+msgstr "Vehículos"
+
+#. module: car_workshop
+#: model:ir.model,name:car_workshop.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: car_workshop
+#: model:ir.model.fields,field_description:car_workshop.field_res_partner_car__create_uid
+msgid "Created by"
+msgstr "Creado Por"
+
+#. module: car_workshop
+#: model:ir.model.fields,field_description:car_workshop.field_res_partner_car__create_date
+msgid "Created on"
+msgstr "Creado En"
+
+#. module: car_workshop
+#: model:ir.model.fields,field_description:car_workshop.field_report_car_workshop_report_car_services__display_name
+#: model:ir.model.fields,field_description:car_workshop.field_res_partner_car__display_name
+msgid "Display Name"
+msgstr "Nombre A Mostrar"
+
+#. module: car_workshop
+#: model:ir.model.fields,field_description:car_workshop.field_report_car_workshop_report_car_services____last_update
+#: model:ir.model.fields,field_description:car_workshop.field_res_partner_car____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación En"
+
+#. module: car_workshop
+#: model:ir.model.fields,field_description:car_workshop.field_res_partner_car__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización Por"
+
+#. module: car_workshop
+#: model:ir.model.fields,field_description:car_workshop.field_res_partner_car__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización En"
+
+#. module: car_workshop
+#: model:ir.model.fields,field_description:car_workshop.field_res_partner_car__name
+msgid "Licence Plate"
+msgstr "Matrícula"
+
+#. module: car_workshop
+#: model:ir.model.fields,field_description:car_workshop.field_res_partner_car__owner_id
+msgid "Owner"
+msgstr "Dueño"
+
+#. module: car_workshop
+#: model:ir.model,name:car_workshop.model_res_partner_car
+msgid "Partner Car"
+msgstr "Vehículo de Cliente"
+
+#. module: car_workshop
+#: model:ir.actions.server,name:car_workshop.car_services_pdf_report_action
+msgid "Print Car Services"
+msgstr "Imprimir Servicios de Vehículo"
+
+#. module: car_workshop
+#: model:ir.actions.server,name:car_workshop.top_services_pdf_report_action
+msgid "Print Top Services"
+msgstr "Imprimir Servicios Más Vendidos"
+
+#. module: car_workshop
+#: model:ir.ui.menu,name:car_workshop.car_workshop_quotation
+msgid "Repairs"
+msgstr "Reparaciones"
+
+#. module: car_workshop
+#: model:ir.ui.menu,name:car_workshop.car_workshop_reports
+msgid "Reports"
+msgstr "Reportes"
+
+#. module: car_workshop
+#: model_terms:ir.ui.view,arch_db:car_workshop.report_most_demanded_service
+msgid "Requested:"
+msgstr "Solicitado:"
+
+#. module: car_workshop
+#: model:ir.model,name:car_workshop.model_sale_order
+msgid "Sales Order"
+msgstr "Aviso para pedido de venta"
+
+#. module: car_workshop
+#: model:ir.model,name:car_workshop.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea pedido de venta"
+
+#. module: car_workshop
+#: model_terms:ir.ui.view,arch_db:car_workshop.report_most_demanded_service
+msgid "The Most Requested Product Is:<br/>"
+msgstr "El Producto Más Solicitado Es:<br/>"
+
+#. module: car_workshop
+#: model:ir.ui.menu,name:car_workshop.top_service_report_menu
+msgid "Top Service"
+msgstr "Servicio Más Vendido"
+
+#. module: car_workshop
+#: model:ir.actions.report,name:car_workshop.report_car_workshop_products
+msgid "Top Service (PDF)"
+msgstr "Servicio Más Vendido (PDF)"
+
+#. module: car_workshop
+#: model_terms:ir.ui.view,arch_db:car_workshop.report_most_demanded_service
+msgid "Total Amount:"
+msgstr "Monto Total"
+
+#. module: car_workshop
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_001
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_002
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_003
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_004
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_005
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_006
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_007
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_008
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_009
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_010
+#: model:product.product,uom_name:car_workshop.product_product_repair_service_011
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_001_product_template
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_002_product_template
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_003_product_template
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_004_product_template
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_005_product_template
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_006_product_template
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_007_product_template
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_008_product_template
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_009_product_template
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_010_product_template
+#: model:product.template,uom_name:car_workshop.product_product_repair_service_011_product_template
+msgid "Units"
+msgstr "Unidades"
+
+#. module: car_workshop
+#: model:ir.ui.menu,name:car_workshop.car_workshop_root_menu
+msgid "Workshop"
+msgstr "Taller"
+
+#. module: car_workshop
+#: model_terms:ir.ui.view,arch_db:car_workshop.report_most_demanded_service
+msgid "times"
+msgstr "veces"
