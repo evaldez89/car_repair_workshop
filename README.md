@@ -39,7 +39,7 @@
   ![image](https://user-images.githubusercontent.com/12959163/145415154-5dfabe35-8f14-4575-81d4-df8b99c32f1e.png)
 
 ### Al completar los datos de la cotización, confirmar
-- ![image](https://user-images.githubusercontent.com/12959163/145415465-931cf24d-3e5b-4994-92c5-4b1bfe393976.png)
+- ![image](https://user-images.githubusercontent.com/12959163/145499615-8014c84a-9f12-4cd3-ae3b-0df65355dbb0.png)
 - ![image](https://user-images.githubusercontent.com/12959163/145416091-eb9dc871-1410-42f1-9d29-22c862fa66cd.png)
 > Una vez creada la factura, la cotización se considera como "Facturada" y se incluye en la reportería
   
